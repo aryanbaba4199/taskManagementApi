@@ -7,6 +7,7 @@ const app = express();
 
 require('dotenv').config();
 
+app.use(express.json());
 
 // ----------Connecting to Database ----------
 mongoose.connect(process.env.MONGODB_URI, {

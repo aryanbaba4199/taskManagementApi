@@ -4,6 +4,8 @@ This is a RESTful API for managing tasks.
 
 ## Installation
 
+liveUrl : https://taskmanagementapi-crvh.onrender.com/
+
 1. Clone the repository:
    ```sh
    git clone https://github.com/aryanbaba4199/task-management-api.git
@@ -33,15 +35,14 @@ URL: /api/tasks
 Method: POST
 Request Body:
 json
-Copy code
+
 {
   "title": "Task title",
   "description": "Task description",
   "status": "pending"
 }
 Response Body (example):
-json
-Copy code
+
 {
   "_id": "6092d194930b1f1968bfae75",
   "title": "Task title",
@@ -54,8 +55,7 @@ Retrieve all tasks
 URL: /api/tasks
 Method: GET
 Response Body (example):
-json
-Copy code
+
 [
   {
     "_id": "6092d194930b1f1968bfae75",
@@ -67,3 +67,4 @@ Copy code
   }
 ]
 
+# taskManagementApi

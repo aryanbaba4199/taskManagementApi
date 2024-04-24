@@ -48,7 +48,7 @@ router.patch('/:id', getTask, async(req, res)=>{
 // -----------Deleting Task -------------
 router.delete('/:id', getTask, async (req, res)=>{
     try{
-        await res.task.remove();
+        await Task.findByIdAndDelete(req.params.id);
         res.status(200).json({message: 'Task Deleted'});
     }catch(e){
         console.error(e);
